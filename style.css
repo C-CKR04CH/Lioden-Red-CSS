@@ -3,3 +3,8 @@ body {
 background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
 background-size: 100%;
  } }
+h1 {
+color: #FFFFFF !important;
+font-size: 64px;
+text-align: center !important;
+}
