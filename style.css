@@ -11,3 +11,7 @@ border: none;
 background: rgba(0, 0, 0, 0.6)!important;
 border: none !important;
 }
+.container.main {
+background: rgba(55, 58, 39, 0.0);
+border: none;
+}
