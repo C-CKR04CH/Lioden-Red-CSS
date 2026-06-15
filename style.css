@@ -1,4 +1,4 @@
-/* 1. MAIN BACKGROUND SETUP */
+/* 1. MAIN BACKGROUND */
 @media screen and (min-width: 601px) {
   body {
     background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed !important;
@@ -6,10 +6,8 @@
   }
 }
 
-/* 2. STRIP THE MAIN CONTENT WRAPPERS */
-.container.main, 
-.col-md-9, 
-.col-md-3 {
+/* 2. CLEAR OUTER WRAPPER */
+.container.main {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -21,39 +19,29 @@
   border: none !important;
 }
 
-/* 4. CREATE THE SLICK TRANSPARENT BLACK PANELS */
-.panel, 
-.table, 
-.feature, 
-div#commentBox {
+/* 4. MAKE THE MAIN LEFT COLUMN TRANSPARENT BLACK */
+.col-md-9 {
   background: rgba(0, 0, 0, 0.6) !important;
-  color: #ffffff !important;
-  border: none !important;
   border-radius: 6px !important;
-  padding: 12px !important;
+  padding: 15px !important;
 }
 
-/* 5. CLEAR OUT INTERNAL BLUE/GREEN LAYERS */
-th, 
-td, 
-.top, 
-.bottom, 
-div.left, 
-.inner-table .left, 
-.inner-table .right, 
-.right_odd, 
-.comment {
+/* 5. WIPE OUT LIODEN'S INNER BLUE-GREEN BLOCKS */
+.col-md-9 .table,
+.col-md-9 .table td,
+.col-md-9 .table th,
+.col-md-9 div.left,
+.col-md-9 .inner-table .left,
+.col-md-9 .inner-table .right,
+.col-md-9 .feature,
+.col-md-9 .comment {
   background: transparent !important;
   color: #ffffff !important;
   border: none !important;
 }
 
-/* 6. LINK VISIBILITY FIX */
-a:link, 
-a:visited {
+/* 6. LINK TEXT COLOR FIX */
+.col-md-9 a, 
+.col-md-9 a:visited {
   color: #a4d4ff !important;
-  text-decoration: none !important;
-}
-a:hover {
-  color: #ffffff !important;
 }
