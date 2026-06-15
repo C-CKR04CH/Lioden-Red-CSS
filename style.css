@@ -3,6 +3,6 @@ body {
 background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
 background-size: 100%;
 } }
-.container.main {
+.row {
   background-color: rgba(0, 0, 0, 0.6);
 }
