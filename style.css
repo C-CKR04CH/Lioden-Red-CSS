@@ -1,20 +1,55 @@
-.container.main {
-  background: rgba(55, 58, 39, 0.0); /* Keeps the main frame completely invisible */
-}
-.col-md-9 {
-  background: none; /* Strips the default white/gray block off the left side */
-}
-/* This empties out the giant master table wrapper */
-.table {
-  background: rgba(0, 0, 0, 0.0);
+body {
+  background: url('https://files.catbox.moe/55ylgy.jpg') center center fixed;
+  background-size: cover;
 }
 
-/* This targets the ACTUAL boxes where your text lives */
+/* 1. WIPE OUT THE OUTER WRAPPERS (Exactly as the working code does) */
+.container.main {
+  background: rgba(55, 58, 39, 0.0);
+  border: none;
+  box-shadow: none;
+  border-radius: 5px; 
+}
+.col-md-9 {
+  background: none; 
+}
+.table {
+  background: rgba(0, 0, 0, 0.0);
+  border: none !important;
+  border-collapse: separate;
+  border-radius: 0px; 
+}
+
+/* 2. COLOR THE INDIVIDUAL TABLE PIECES (Replacing #HEX with transparent black) */
+.top, .bottom, th {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 0px !important; 
+}
+
+.table .left {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 0px !important; 
+}
+
 .inner-table .left {
-  background: rgba(0, 0, 0, 0.6) !important; /* The dark transparent panel */
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 0px !important;  
 }
 
 .inner-table .right {
-  background: rgba(0, 0, 0, 0.6) !important; /* The dark transparent panel */
-  color: #ffffff !important; /* Makes the text readable */
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 0px !important; 
+  color: #ffffff !important; 
+} 
+
+.right_odd {
+  background: none !important; 
+}
+
+/* Fix basic link colors so you can read them */
+a:link, a:visited {
+  color: #a4d4ff !important;
+  background: none !important; 
 }
