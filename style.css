@@ -1,38 +1,59 @@
-/* Background setup */
-@media screen and (min-width: 601px) { 
+/* 1. MAIN BACKGROUND SETUP */
+@media screen and (min-width: 601px) {
   body {
-    background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
-    background-size: 100%;
-  } 
+    background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed !important;
+    background-size: cover !important;
+  }
 }
 
-/* Force the main layout wrappers to be completely clear */
+/* 2. STRIP THE MAIN CONTENT WRAPPERS */
 .container.main, 
-.col-md-9 {
+.col-md-9, 
+.col-md-3 {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-/* Topbar styling */
+/* 3. TOPBAR */
 .topbar {
   background: rgba(0, 0, 0, 0.6) !important;
   border: none !important;
 }
 
-/* Target the main text block and any inner layout panels */
+/* 4. CREATE THE SLICK TRANSPARENT BLACK PANELS */
+.panel, 
 .table, 
-div.left, 
-.inner-table .left, 
-.inner-table .right {
+.feature, 
+div#commentBox {
   background: rgba(0, 0, 0, 0.6) !important;
-  color: #ffffff !important; /* Forces text to white so it's readable on black */
+  color: #ffffff !important;
   border: none !important;
-  border-collapse: separate !important;
-  border-radius: 4px !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
 }
 
-/* Optional: Gives the main table area a bit of breathing room */
-.table {
-  padding: 15px !important;
+/* 5. CLEAR OUT INTERNAL BLUE/GREEN LAYERS */
+th, 
+td, 
+.top, 
+.bottom, 
+div.left, 
+.inner-table .left, 
+.inner-table .right, 
+.right_odd, 
+.comment {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* 6. LINK VISIBILITY FIX */
+a:link, 
+a:visited {
+  color: #a4d4ff !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #ffffff !important;
 }
