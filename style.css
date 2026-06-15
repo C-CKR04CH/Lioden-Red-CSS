@@ -6,9 +6,10 @@
   } 
 }
 
-/* Force the main layout wrappers to be completely clear */
+/* Force layout wrappers to be clear */
 .container.main, 
-.col-md-9 {
+.col-md-9,
+.table {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -20,19 +21,20 @@
   border: none !important;
 }
 
-/* Target the main text block and any inner layout panels */
-.table, 
+/* Target the actual boxes containing your text */
 div.left, 
 .inner-table .left, 
-.inner-table .right {
+.inner-table .right,
+.table tr,
+.table td {
   background: rgba(0, 0, 0, 0.6) !important;
-  color: #ffffff !important; /* Forces text to white so it's readable on black */
+  color: #ffffff !important; /* Makes text bright white so it stands out */
   border: none !important;
-  border-collapse: separate !important;
-  border-radius: 4px !important;
 }
 
-/* Optional: Gives the main table area a bit of breathing room */
-.table {
-  padding: 15px !important;
+/* Fixes links inside the new black boxes so they are readable */
+.table td a, 
+.table td a:visited,
+div.left a {
+  color: #a4d4ff !important; /* Light blue for links; change hex if you want a different color */
 }
