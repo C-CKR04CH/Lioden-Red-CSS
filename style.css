@@ -1,39 +1,20 @@
-body {
-  background: url("https://files.catbox.moe/55ylgy.jpg") center center fixed !important;
-  background-size: cover !important;
-}
-
 .container.main {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: rgba(55, 58, 39, 0.0); /* Keeps the main frame completely invisible */
 }
-
-.topbar {
-  background: rgba(0, 0, 0, 0.6) !important;
-  border: none !important;
-}
-
 .col-md-9 {
-  background: rgba(0, 0, 0, 0.6) !important;
-  border-radius: 6px !important;
-  padding: 20px !important;
+  background: none; /* Strips the default white/gray block off the left side */
+}
+/* This empties out the giant master table wrapper */
+.table {
+  background: rgba(0, 0, 0, 0.0);
 }
 
-.col-md-9 table, 
-.col-md-9 td, 
-.col-md-9 th, 
-.col-md-9 div.left, 
-.col-md-9 .feature, 
-.col-md-9 .inner-table .left, 
-.col-md-9 .inner-table .right,
-.col-md-9 .comment {
-  background: transparent !important;
-  color: #ffffff !important;
-  border: none !important;
+/* This targets the ACTUAL boxes where your text lives */
+.inner-table .left {
+  background: rgba(0, 0, 0, 0.6) !important; /* The dark transparent panel */
 }
 
-.col-md-9 a, 
-.col-md-9 a:visited {
-  color: #a4d4ff !important;
+.inner-table .right {
+  background: rgba(0, 0, 0, 0.6) !important; /* The dark transparent panel */
+  color: #ffffff !important; /* Makes the text readable */
 }
