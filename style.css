@@ -3,6 +3,9 @@ body {
 background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
 background-size: 100%;
 } }
-.row {
-  bg-container-color: rgba(0, 0, 0, 0.6);
+.container.main {
+background: rgba(0, 0, 0, 0.6);
+border: none;
 }
+.col-md-9 {
+background: none; } 
