@@ -1,55 +1,60 @@
 body {
-  background: url('https://files.catbox.moe/55ylgy.jpg') center center fixed;
-  background-size: cover;
+  background: url('https://files.catbox.moe/55ylgy.jpg') center center fixed !important;
+  background-size: cover !important;
+  color: #ffffff !important;
 }
 
-/* 1. WIPE OUT THE OUTER WRAPPERS (Exactly as the working code does) */
-.container.main {
-  background: rgba(55, 58, 39, 0.0);
-  border: none;
-  box-shadow: none;
-  border-radius: 5px; 
-}
-.col-md-9 {
-  background: none; 
-}
-.table {
-  background: rgba(0, 0, 0, 0.0);
+/* 1. THE INVISIBLE WRAPPERS - Wiping out the master layout blocks */
+.container.main, 
+.col-md-9, 
+.table, 
+.right_odd {
+  background: transparent !important;
   border: none !important;
-  border-collapse: separate;
-  border-radius: 0px; 
+  box-shadow: none !important;
 }
 
-/* 2. COLOR THE INDIVIDUAL TABLE PIECES (Replacing #HEX with transparent black) */
-.top, .bottom, th {
+/* 2. ALL THE TAGS - Forcing transparent black onto every specific panel */
+.topbar, 
+.navbar, 
+.navbar-toggle,
+.breadcrumb, 
+.alert, 
+.alert-warning, 
+.alert-danger, 
+.alert-success,
+div#commentBox, 
+.comment, 
+.panel, 
+.feature, 
+div.left, 
+.top, 
+.bottom, 
+th, 
+.table .left, 
+.inner-table .left, 
+.inner-table .right, 
+input, 
+textarea, 
+select, 
+button.button, 
+a.btn.btn-default.button, 
+.cave-grid, 
+.mound-grid, 
+.featured-lion {
   background: rgba(0, 0, 0, 0.6) !important;
   color: #ffffff !important;
   border: none !important;
-  border-radius: 0px !important; 
+  border-radius: 4px !important;
 }
 
-.table .left {
-  background: rgba(0, 0, 0, 0.6) !important;
-  border-radius: 0px !important; 
-}
-
-.inner-table .left {
-  background: rgba(0, 0, 0, 0.6) !important;
-  border-radius: 0px !important;  
-}
-
-.inner-table .right {
-  background: rgba(0, 0, 0, 0.6) !important;
-  border-radius: 0px !important; 
-  color: #ffffff !important; 
-} 
-
-.right_odd {
-  background: none !important; 
-}
-
-/* Fix basic link colors so you can read them */
-a:link, a:visited {
+/* 3. FIXING LINKS - So they are readable against the dark background */
+a:link, 
+a:visited {
   color: #a4d4ff !important;
   background: none !important; 
+}
+
+a:hover {
+  color: #ffffff !important; 
 }
