@@ -1,43 +1,51 @@
-/* 1. Background Image */
+/* 1. Background Image setup */
 @media screen and (min-width: 601px) { 
   body {
-    background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
-    background-size: 100%;
+    background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed !important;
+    background-size: 100% 100% !important;
   } 
 }
 
-/* 2. Clear out the giant outermost layout wrapper */
-.container.main {
+/* 2. Strip default backgrounds from the outer layout columns */
+.container.main, 
+.col-md-9, 
+.col-md-3 {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-/* 3. Topbar styling */
+/* 3. Style the Topbar */
 .topbar {
   background: rgba(0, 0, 0, 0.6) !important;
   border: none !important;
 }
 
-/* 4. Target the middle column panel and all inner boxes */
-.col-md-9,
-div.left, 
-.inner-table .left, 
-.inner-table .right,
-.feature {
+/* 4. Turn the main area tables and sidebar panels transparent black */
+.col-md-9 .table, 
+.col-md-9 .panel, 
+.col-md-9 .feature, 
+.col-md-3 .panel {
   background: rgba(0, 0, 0, 0.6) !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 4px !important;
 }
 
-/* 5. Strip background from the layout tables so the panels show through */
-.table, tr, td {
+/* 5. Clear out the default blue/green backgrounds inside the main tables */
+.col-md-9 .table td, 
+.col-md-9 .table th, 
+.col-md-9 .table tr, 
+.col-md-9 .inner-table .left, 
+.col-md-9 .inner-table .right, 
+.col-md-9 div.left {
   background: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
 }
 
-/* 6. Text & Link visibility fixes */
+/* 6. Fix links so they don't get lost against the black background */
 .col-md-9 a, 
 .col-md-9 a:visited {
-  color: #a4d4ff !important;
+  color: #a4d4ff !important; /* Soft blue links */
 }
