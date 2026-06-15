@@ -4,5 +4,5 @@ background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
 background-size: 100%;
 } }
 .row {
-  background-color: rgba(0, 0, 0, 0.6);
+  bg-container-color: rgba(0, 0, 0, 0.6);
 }
