@@ -3,10 +3,6 @@ body {
 background: url('https://files.catbox.moe/ztxiux.jpg') center center fixed;
 background-size: 100%;
 } }
-::-webkit-scrollbar {
-width: 7px;
-height: 7px; }
-::-webkit-scrollbar-track {
-background: #00;}
-::-webkit-scrollbar-thumb {
-background: #00; } 
+.container.main {
+  background-color: rgba(0, 0, 0, 0.6);
+}
