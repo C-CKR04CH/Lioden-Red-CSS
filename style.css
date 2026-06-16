@@ -11,3 +11,39 @@ text-align: center !important;
 #fraProfileContent {
     color: gold;
 }
+::-webkit-scrollbar {
+width: 7px;
+height: 7px; }
+::-webkit-scrollbar-track {
+background: #35100c;}
+::-webkit-scrollbar-thumb {
+background: #35100c; } 
+.topbar {
+background: #35100c !important;
+color: #35100c !important;
+border: none !important;
+border-radius: 0px !important;  }
+ 
+.navbar {
+background: #35100c !important;
+color: #35100c !important;
+border: none !important;
+border-radius: 0px !important; }
+
+.navbar li a:hover {
+background: #35100c !important;
+color: #e4a574 !important; }
+.navbar-toggle {
+border: none !important;
+background: #HEX !important;
+}
+
+.navbar-collapse {
+box-shadow: none !important;
+border-top: none !important;
+}
+
+
+
+
+
