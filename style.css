@@ -42,7 +42,12 @@ background: #HEX !important;
 box-shadow: none !important;
 border-top: none !important;
 }
-
+.alert {
+background: #905e20 !important;
+color: ##482f10 !important;
+border: none !important;
+border-radius: 0px !important;
+text-align: center !important;  }
 
 
 
